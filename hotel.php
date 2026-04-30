@@ -50,7 +50,7 @@
                                 <ul>
                                     <li><a href="#sec1">About</a></li>
                                     <li><a href="#sec4">Rooms</a></li>
-                                    <li><a href="#sec5">Contact</a></li>
+                                    <li><a href="#sec6">Contact</a></li>
                                     <li><a href="../index.php" class="external">Pub</a></li>
                                 </ul>
                             </nav>
@@ -154,41 +154,46 @@
                                                 <div class="box-item">
                                                     <img  src="images/hotel/adelaide_room.jpg" alt="">
                                                 </div>
+                                                <p class="gallery-caption">Adelaide Room</p>
                                             </div>
                                         </div>
                                         <div class="gallery-item rest">
                                             <div class="grid-item-holder">
                                                 <div class="box-item">
-                                                    <img  src="images/hotel/catherine_room.jpg"   alt="">
+                                                    <img  src="images/hotel/catherine_room.jpg" alt="">
                                                 </div>
+                                                <p class="gallery-caption">Catherine Room</p>
                                             </div>
                                         </div>
-                                        <div class="gallery-item   menu">
+                                        <div class="gallery-item  menu">
                                             <div class="grid-item-holder">
                                                 <div class="box-item">
-                                                    <img  src="images/hotel/elizabeth_room.jpg"   alt="">
+                                                    <img  src="images/hotel/elizabeth_room.jpg" alt="">
                                                 </div>
+                                                <p class="gallery-caption">Elizabeth Room</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="bold-separator">
-                                <span></span>
-                            </div>
-                            <div class="row mobile-reverse">
-                                <div class="col-md-6">
-                                    <div class="item">
-                                        <iframe width="100%"
-                                            height="450" src="https://www.youtube.com/embed/mlBA4XYc8Us?si=HNRfBX8XGshneDT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="row hotel-rooms-row">
+                                <div class="col-md-4">
+                                    <div class="one-off-image">
+                                        <img src="images/hotel/victoria_room.jpg" alt=""/>
                                     </div>
+                                    <p class="gallery-caption">Victoria Room</p>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="section-title">
-                                        <h4 class="decor-title">Promotional video</h4>
-                                        <div class="separator color-separator"></div>
+                                <div class="col-md-8">
+                                    <div class="padded-item">
+                                        <div class="section-title">
+                                            <h4 class="decor-title">Promotional video</h4>
+                                            <div class="separator color-separator"></div>
+                                        </div>
+                                        <div class="item">
+                                            <iframe width="100%"
+                                                height="450" src="https://www.youtube.com/embed/mlBA4XYc8Us?si=HNRfBX8XGshneDT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        </div>
                                     </div>
-                                    <p></p>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +202,7 @@
                         </div>
                     </section>
                     <!--section end-->
-                    <section class="parallax-section" id="sec5">
+                    <section class="parallax-section" id="sec6">
                         <div class="bg bg-parallax" style="background-image:url(images/bg/bg_hotel_3.jpg)" data-top-bottom="transform: translateY(300px);" data-bottom-top="transform: translateY(-300px);"></div>
                         <div class="overlay"></div>
                         <div class="container">

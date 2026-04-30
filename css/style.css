@@ -1363,6 +1363,36 @@ article {
     object-fit: cover;
     display: block;
 }
+.one-off-image {
+	width: 100%;
+	float:left;
+	margin-top: 12px;
+}
+.one-off-image img {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
+}
+.gallery-items .gallery-caption {
+    text-align: center;
+    font-size: 22px;
+    color: #000;
+}
+.col-md-4 .gallery-caption {
+    text-align: center;
+    font-size: 22px;
+    color: #000;
+}
+@media (max-width: 767px) {
+    .one-off-image {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.padded-item {
+	margin-top:30px;
+	margin-bottom:30px;
+}
 /*------ Shop ------------------------------------------------*/
 .products {
 	float:left;
@@ -3046,6 +3076,10 @@ nav li:hover > ul {
         align-items: center;
     }
 	.menu-row {
+        display: flex;
+        align-items: center;
+    }
+	.hotel-rooms-row {
         display: flex;
         align-items: center;
     }
