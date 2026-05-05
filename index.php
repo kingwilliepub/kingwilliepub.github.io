@@ -316,7 +316,7 @@
             </div>
             <!--content end-->
             <!--=============== footer ===============-->
-            <?php include 'includes/footer.php'; ?>
+            <?php $footer_home = "pub"; include 'includes/footer.php'; ?>
             <!--footer end -->
         </div>
         <!-- wrapper end -->

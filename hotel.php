@@ -233,7 +233,7 @@
                     </section>
                 </div>
                 <!--=============== footer ===============-->
-                <?php include 'includes/footer.php'; ?>
+                <?php $footer_home = "hotel"; include 'includes/footer.php'; ?>
                 <!--footer end --> 
             </div>
             <!-- wrapper end -->
