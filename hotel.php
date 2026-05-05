@@ -35,15 +35,6 @@
                                 <?php include 'includes/socials.html'; ?>
                             </ul>
                         </div>
-                        <!--logo-->         
-                        <!--    
-                        <div class="logo-holder">
-                            <a href="index.php">
-                            <img src="images/logo.png" class="respimg logo-vis" alt="">
-                            <img src="images/logo2.png" class="respimg logo-notvis" alt="">
-                            </a>
-                        </div>
-                        -->
                         <!--Navigation -->
                         <div class="nav-holder">
                             <nav>
@@ -101,7 +92,6 @@
                         <div class="overlay"></div>
                         <div class="container">
                             <h2>Our Rooms</h2>
-                            <!-- <h3>Images and videos of our rooms</h3> -->
                         </div>
                     </section>
                     <!--=============== About 2 ===============-->
@@ -114,7 +104,6 @@
                                 <!--about text-->
                                 <div class="col-md-6">
                                     <div class="section-title">
-                                        <!-- <h3>Virtual Tour</h3> -->
                                         <h4 class="decor-title">About our rooms</h4>
                                         <div class="separator color-separator"></div>
                                     </div>

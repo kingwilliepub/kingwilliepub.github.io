@@ -33,15 +33,6 @@
                             <?php include 'includes/socials.html'; ?>
                         </ul>
                     </div>
-                    <!--logo-->
-                    <!--         
-                        <div class="logo-holder">
-                            <a href="index.html">
-                            <img src="images/logo.png" class="respimg logo-vis" alt="">
-                            <img src="images/logo2.png" class="respimg logo-notvis" alt="">
-                            </a>
-                        </div>
-                        -->
                     <!--Navigation -->
                     <div class="nav-holder">
                         <nav class="scroll-nav">
@@ -179,9 +170,6 @@
                         </div>
                         <!-- choice here, either use desserts.html or others.html -->
                         <?php /* include 'pub_menu/others.html'; */ ?>
-                        <!--<div class="bold-separator">
-                                <span></span>
-                            </div>-->
                         <div class="menu-link">
                             <a class="custom-scroll-link link" target="_blank" rel="noopener noreferrer" href="pub_menu/menu.pdf">See our full menu</a>
                         </div>

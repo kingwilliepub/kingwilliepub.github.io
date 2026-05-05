@@ -44,16 +44,15 @@ if(trim($name) == '') {
 $comments = stripslashes($comments);
 
 // Enter the email address that you want to emails to be sent to.
-$address = "neilhornsey@gmail.com";
+$address = "hotel@kingwilliamhampstead.com";
 
 $e_subject = 'King William IV enquiry from ' . $name . '.';
 
 $e_body = "<b>From:</b> $name<br/><br/><b>Email:</b> $email<br/><b>Phone:</b> $phone<br/><br/><b>Message:</b><br/><br/>$comments";
 
-// working now for terrimullholland domain, but not x10
 // note that for this to work with x10, the from address must be one that is registered with the account
 // such as: xqdworbt@mobineil.x10.network
-$headers = "From: King William Website <Laura@thekingwillie.co.uk>\r\n";
+$headers = "From: King William Website <pub@kingwilliamhampstead.com>\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
