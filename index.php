@@ -58,7 +58,11 @@
                 <div class="slideshow-container">
                     <!-- parallax image -->
                     <div class="media-container" data-top-bottom="transform: translateY(300px);" data-bottom-top="transform: translateY(-300px);">
-                        <div class="bg" style="background-image: url(images/bg/bg_hotel_3.jpg)"></div>
+                        <div class="bg" style="background-image: url(images/bg/bg_hotel_1.jpg)"></div>
+                        <!-- <div class="bg" style="background-image: url(images/bg/bg_hotel_7.jpg)"></div> -->
+                        <!-- <div class="bg" style="background-image: url(images/bg/bg_hotel_8.jpg)"></div> -->
+                        <!-- <div class="bg" style="background-image: url(images/bg/bg_hotel_9.jpg)"></div> -->
+                        <!-- <div class="bg" style="background-image: url(images/bg/bg_hotel_10.jpg)"></div> -->
                     </div>
                     <div class="hero-title-holder">
                         <div class="overlay"></div>
@@ -311,7 +315,8 @@
     </div>
     <!-- Main end -->
     <!--=============== google map ===============-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5mh5BxxFn1BHHm4jMKbMqkyYAZnj5PWQ"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5mh5BxxFn1BHHm4jMKbMqkyYAZnj5PWQ"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHTZVgo0EFjkxas5GbZQ6zOqE7nfXa3Wk"></script>
     <!--=============== scripts  ===============-->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
