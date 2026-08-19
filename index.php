@@ -257,7 +257,7 @@
                                             <p style="float:none; text-align:center;">77 Hampstead High St, London NW3 1RE</p>
                                         </li>
                                         <li>
-                                            <p style="float:none; text-align:center;">0207 435 5153</p>
+                                            <p style="float:none; text-align:center;">0208 054 1562</p>
                                         </li>
                                         <li>
                                             <p style="float:none; text-align:center;">pub@kingwilliamhampstead.com</p>

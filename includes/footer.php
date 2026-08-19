@@ -17,7 +17,7 @@
             </div>
             <!--footer contacts links -->
             <ul class="footer-contacts">
-                <li><p>0207 435 5153</p></li>
+                <li><p>0208 054 1562</p></li>
                 <li><p>77 Hampstead High St, London NW3 1RE</p></li>
                 <li><p><?php echo $footer_home; ?>@kingwilliamhampstead.com</p></li>
             </ul>
