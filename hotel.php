@@ -83,7 +83,7 @@
                                 <span></span>
                             </div>
                             <div class="menu-link">
-                                <a class="custom-scroll-link link" href="https://via.eviivo.com/kingsnw3" target="_new">Check Availability</a>
+                                <a class="custom-scroll-link link" href="https://direct-book.com/properties/kingsboutiquehotel?locale=en" target="_new">Check Availability</a>
                             </div>
                         </div>
                     </section>
@@ -187,7 +187,7 @@
                             </div>
                         </div>
                         <div class="menu-link">
-                            <a class="custom-scroll-link link" style="float:none; text-align:center; margin-top: 60px;" href="https://via.eviivo.com/kingsnw3" target="_new">Check Availability</a>
+                            <a class="custom-scroll-link link" style="float:none; text-align:center; margin-top: 60px;" href="https://direct-book.com/properties/kingsboutiquehotel?locale=en" target="_new">Check Availability</a>
                         </div>
                     </section>
                     <!--section end-->
