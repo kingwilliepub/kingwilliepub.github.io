@@ -267,62 +267,121 @@ function initLambert() {
         }
     });
 	// map ------------------
-    if ($("#map-canvas").length > 0) {
-    $("#map-canvas").gmap3({
-        action: "init",
-        marker: {
-			// markers and locations------------------
-            values: [ {
-                latLng: [ 51.5556614,-0.1768173,1 ],
-                data: "King William IV Pub",
-                options: {
-                    icon: "images/marker.png"
+    // if ($("#map-canvas").length > 0) {
+    // $("#map-canvas").gmap3({
+    //     action: "init",
+    //     marker: {
+	// 		// markers and locations------------------
+    //         values: [ {
+    //             latLng: [ 51.5556614,-0.1768173,1 ],
+    //             data: "King William IV Pub",
+    //             options: {
+    //                 icon: "images/marker.png"
+    //             }
+    //         }],
+    //         options: {
+    //             draggable: false
+    //         },
+    //         events: {
+    //             mouseover: function(a, b, c) {
+    //                 var d = $(this).gmap3("get"), e = $(this).gmap3({
+    //                     get: {
+    //                         name: "infowindow"
+    //                     }
+    //                 });
+    //                 if (e) {
+    //                     e.open(d, a);
+    //                     e.setContent(c.data);
+    //                 } else $(this).gmap3({
+    //                     infowindow: {
+    //                         anchor: a,
+    //                         options: {
+    //                             content: c.data
+    //                         }
+    //                     }
+    //                 });
+    //             },
+    //             mouseout: function() {
+    //                 var a = $(this).gmap3({
+    //                     get: {
+    //                         name: "infowindow"
+    //                     }
+    //                 });
+    //                 if (a) a.close();
+    //             }
+    //         }
+    //     },
+    //     map: {
+    //         options: {
+    //             zoom: 15,
+    //             disableDefaultUI: true,   // 👈 KEY LINE
+    //             zoomControl: true,   
+    //             mapTypeControl: true,    // keep zoom buttons
+    //             scrollwheel: false,
+    //             draggable: true
+    //         }
+    //     }
+    // });
+	// }
+    window.initMap = function() {
+        if ($("#map-canvas").length > 0) {
+            // Initialize the layout using gmap3 and define the focus center
+            $("#map-canvas").gmap3({
+                action: "init",
+                map: {
+                    options: {
+                        center: [51.5556614, -0.1768173], 
+                        zoom: 15,
+                        mapId: "DEMO_MAP_ID", 
+                        mapTypeId: "roadmap", // 👈 FIX: Prevents gmap3 from crashing on undefined ROADMAP
+                        disableDefaultUI: true,
+                        zoomControl: true,   
+                        mapTypeControl: true,
+                        scrollwheel: false,
+                        draggable: true
+                    }
                 }
-            }],
-            options: {
-                draggable: false
-            },
-            events: {
-                mouseover: function(a, b, c) {
-                    var d = $(this).gmap3("get"), e = $(this).gmap3({
-                        get: {
-                            name: "infowindow"
-                        }
+            });
+
+            // Fetch native map and load the marker library safely
+            var nativeMap = $("#map-canvas").gmap3("get");
+            
+            if (nativeMap) {
+                google.maps.importLibrary("marker").then(function(markerLib) {
+                    
+                    var markerImage = document.createElement("img");
+                    markerImage.src = "images/marker.png";
+
+                    var marker = new markerLib.AdvancedMarkerElement({
+                        map: nativeMap,
+                        position: { lat: 51.5556614, lng: -0.1768173 },
+                        title: "King William IV Pub",
+                        content: markerImage 
                     });
-                    if (e) {
-                        e.open(d, a);
-                        e.setContent(c.data);
-                    } else $(this).gmap3({
-                        infowindow: {
-                            anchor: a,
-                            options: {
-                                content: c.data
-                            }
-                        }
+
+                    var infowindow = new google.maps.InfoWindow({
+                        content: "King William IV Pub"
                     });
-                },
-                mouseout: function() {
-                    var a = $(this).gmap3({
-                        get: {
-                            name: "infowindow"
-                        }
+
+                    // Event Listeners for the InfoWindow hover effect
+                    marker.element.addEventListener("mouseover", function() {
+                        infowindow.open({
+                            anchor: marker,
+                            map: nativeMap
+                        });
                     });
-                    if (a) a.close();
-                }
-            }
-        },
-        map: {
-            options: {
-                zoom: 15,
-                disableDefaultUI: true,   // 👈 KEY LINE
-                zoomControl: true,   
-                mapTypeControl: true,    // keep zoom buttons
-                scrollwheel: false,
-                draggable: true
+
+                    marker.element.addEventListener("mouseout", function() {
+                        infowindow.close();
+                    });
+
+                }).catch(function(err) {
+                    console.error("Failed to load Google Maps marker library:", err);
+                });
             }
         }
-    });
-	}
+    };
+
  	$('.chosen-select').niceSelect();
 	// contact form------------------
     $("#contactform").submit(function() {

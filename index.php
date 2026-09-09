@@ -315,12 +315,12 @@
     </div>
     <!-- Main end -->
     <!--=============== google map ===============-->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5mh5BxxFn1BHHm4jMKbMqkyYAZnj5PWQ"></script> -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHTZVgo0EFjkxas5GbZQ6zOqE7nfXa3Wk"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHTZVgo0EFjkxas5GbZQ6zOqE7nfXa3Wk&loading=async&callback=initMap"></script>
     <!--=============== scripts  ===============-->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    
 </body>
 
 </html>
